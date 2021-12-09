@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  background-color: rgb(236, 236, 236);
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 100px;
+  width: 400px;
+  background-color: #dbdbdb;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgb(2, 2, 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form {
+  height: 2rem;
+  width: 17rem;
+  background-color: #ececec;
+  border: none;
+  border-radius: 10px;
+  padding: 0 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+form input {
+  align-self: center;
+  height: 1.6rem;
+  width: 15rem;
+  border: none;
+  background: transparent;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+form i {
+  margin-left: 5px;
+  color: #808080;
+  cursor: pointer;
+}
+.indicator {
+  display: none;
+}
+.indicator i {
+  font-size: 10px;
+  margin-right: 5px;
+}
+.indicator h1 {
+  letter-spacing: 0.2px;
+}
+.container .indicator.active {
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  margin-top: 0.2rem;
+  font-size: 18px;
+  font-weight: bold;
+}
